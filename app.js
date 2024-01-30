@@ -45,3 +45,10 @@ app.use('/blogs', blogRoutes);
 app.use((req, res) => {
   res.status(404).render('404', { title: '404' });
 });
+
+const PORT=5000;
+
+app.listen(PORT, ()=>{
+  console.log(`running on port ${PORT}`)
+})
+
